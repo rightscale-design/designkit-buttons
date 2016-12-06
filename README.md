@@ -36,7 +36,10 @@ npm i designkit-buttons
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: #eee;
   border: 1px solid #888;
   border-radius: 2px;
@@ -44,7 +47,6 @@ npm i designkit-buttons
   background-image: -webkit-linear-gradient(#fcfcfc, #eee);
   background-image: linear-gradient(#fcfcfc, #eee);
   -webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
 
@@ -60,6 +62,7 @@ npm i designkit-buttons
   cursor: default;
   cursor: not-allowed;
   background-image: none;
+  border-color: rgba(20, 20, 20, 0.2);
   box-shadow: none;
   opacity: .65;
 }
@@ -84,6 +87,8 @@ npm i designkit-buttons
 
 .btn.btn-sm {
   padding: 0.125rem 0.625rem;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .btn-default {
@@ -99,10 +104,8 @@ npm i designkit-buttons
 }
 
 .btn-default:disabled, .btn-default:disabled:hover, .btn-default.disabled, .btn-default.disabled:hover {
-  cursor: not-allowed;
-  background-color: #0871d4;
+  background-color: #e2e4e6;
   border-color: rgba(20, 20, 20, 0.2);
-  opacity: .65;
 }
 
 .btn-primary {
@@ -161,6 +164,7 @@ npm i designkit-buttons
 }
 
 .btn-danger:disabled, .btn-danger:disabled:hover, .btn-danger.disabled, .btn-danger.disabled:hover {
+  background-color: #d82f2f;
   border-color: rgba(20, 20, 20, 0.2);
 }
 ```
