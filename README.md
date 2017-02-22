@@ -12,6 +12,10 @@ npm i designkit-buttons
 <button class="btn btn-default" type="button">Button</button>
 
 <a href="#" class="btn btn-default">Default Link</a>
+
+<button class="btn btn-default btn-sm" type="button">Small Button</button>
+
+<button class="btn btn-default btn-lg" type="button">Large Button</button>
 ```
 
 ## The CSS
@@ -26,7 +30,7 @@ npm i designkit-buttons
   position: relative;
   display: inline-block;
   -webkit-appearance: none;
-  padding: 0.375rem 0.75rem;
+  padding: 5px 12px 6px 12px;
   font-size: 13px;
   font-weight: bold;
   line-height: 20px;
@@ -86,9 +90,15 @@ npm i designkit-buttons
 }
 
 .btn.btn-sm {
-  padding: 0.125rem 0.625rem;
+  padding: 2px 10px;
   font-size: 12px;
   line-height: 20px;
+}
+
+.btn.btn-lg {
+  padding: 10px 16px;
+  line-height: 1.3333333;
+  font-size: 15px;
 }
 
 .btn-default {
