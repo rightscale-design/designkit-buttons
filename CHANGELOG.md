@@ -2,7 +2,8 @@
 
 * Added a changelog
 * Added new header to index.html doc
-* Updated spacing
+* Updated padding within buttons
+* Added a large button option
 
 # v1.0.0
 
