@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-npm i designkit-buttons
+npm i designkit-buttons --save
 ```
 
 ## Usage
@@ -21,11 +21,6 @@ npm i designkit-buttons
 ## The CSS
 
 ```css
-/*
-//
-// Designkit-Buttons
-// --------------------------------------------------
-*/
 .btn {
   position: relative;
   display: inline-block;
@@ -48,9 +43,7 @@ npm i designkit-buttons
   border: 1px solid #888;
   border-radius: 2px;
   background-color: #fcfcfc;
-  background-image: -webkit-linear-gradient(#fcfcfc, #eee);
   background-image: linear-gradient(#fcfcfc, #eee);
-  -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
 
@@ -97,15 +90,14 @@ npm i designkit-buttons
 
 .btn.btn-lg {
   padding: 10px 16px;
-  line-height: 1.3333333;
   font-size: 15px;
+  line-height: 1.3333333;
 }
 
 .btn-default {
   color: #57626c;
   background-color: #e2e4e6;
   background-color: #fff;
-  background-image: -webkit-linear-gradient(#fff, #e2e4e6);
   background-image: linear-gradient(#fff, #e2e4e6);
 }
 
@@ -122,14 +114,12 @@ npm i designkit-buttons
   color: #fff;
   background-color: #0871d4;
   background-color: #0f86f6;
-  background-image: -webkit-linear-gradient(#0f86f6, #0871d4);
   background-image: linear-gradient(#0f86f6, #0871d4);
 }
 
 .btn-primary:hover, .btn-primary:active {
   background-color: #0871d4;
   background-color: #0f86f6;
-  background-image: -webkit-linear-gradient(#0f86f6, #0871d4);
   background-image: linear-gradient(#0f86f6, #0871d4);
 }
 
@@ -142,14 +132,12 @@ npm i designkit-buttons
   color: #fff;
   background-color: #5fb000;
   background-color: #70cf00;
-  background-image: -webkit-linear-gradient(#70cf00, #59a500);
   background-image: linear-gradient(#70cf00, #59a500);
 }
 
 .btn-success:hover, .btn-success:active {
   background-color: #5fb000;
   background-color: #6dca00;
-  background-image: -webkit-linear-gradient(#6dca00, #4c8c00);
   background-image: linear-gradient(#6dca00, #4c8c00);
 }
 
@@ -162,14 +150,12 @@ npm i designkit-buttons
   color: #fff;
   background-color: #d82f2f;
   background-color: #d82f2f;
-  background-image: -webkit-linear-gradient(#d82f2f, #b72323);
   background-image: linear-gradient(#d82f2f, #b72323);
 }
 
 .btn-danger:hover, .btn-danger:active {
   background-color: #d82f2f;
   background-color: #d41414;
-  background-image: -webkit-linear-gradient(#d41414, #a60f0f);
   background-image: linear-gradient(#d41414, #a60f0f);
 }
 
