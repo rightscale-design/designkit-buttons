@@ -1,3 +1,9 @@
+# v1.0.2
+
+* Updated package.json
+* Using the latest version of designkit-colors
+* Updated docs
+
 # v1.0.1
 
 * Added a changelog
