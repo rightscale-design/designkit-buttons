@@ -2,7 +2,7 @@
 
 * Updated package.json
 * Using the latest version of designkit-colors
-* Updated docs
+* Added examples
 
 # v1.0.1
 
