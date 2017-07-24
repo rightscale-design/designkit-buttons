@@ -1,3 +1,7 @@
+# v1.0.3
+
+* Updated button spacing to match CA-UI
+
 # v1.0.2
 
 * Updated package.json
