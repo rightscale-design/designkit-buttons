@@ -25,10 +25,10 @@ npm i designkit-buttons --save
   position: relative;
   display: inline-block;
   -webkit-appearance: none;
-  padding: 5px 12px 6px 12px;
+  padding: 10px 15px;
   font-size: 13px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1;
   color: #444;
   text-decoration: none;
   text-shadow: none;
@@ -39,8 +39,11 @@ npm i designkit-buttons --save
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
   background-color: #eee;
-  border: 1px solid #888;
+  border: 1px solid rgba(27, 31, 35, 0.2);
   border-radius: 2px;
   background-color: #fcfcfc;
   background-image: linear-gradient(#fcfcfc, #eee);
