@@ -1,3 +1,7 @@
+# v1.0.4
+
+* Added button-groups
+
 # v1.0.3
 
 * Updated button spacing to match CA-UI
