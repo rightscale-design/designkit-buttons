@@ -143,3 +143,40 @@
   background-color: #d82f2f;
   border-color: rgba(20, 20, 20, 0.2);
 }
+
+.btn-group {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-group::before, .btn-group::after {
+  display: table;
+  content: "";
+}
+
+.btn-group .btn {
+  position: relative;
+  float: left;
+}
+
+.btn-group .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.btn-group .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group .btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group .btn:hover, .btn-group .btn:active {
+  z-index: 2;
+}
+
+.btn-group .btn + .btn {
+  margin-left: -1px;
+}

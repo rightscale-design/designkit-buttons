@@ -16,6 +16,12 @@ npm i designkit-buttons --save
 <button class="btn btn-default btn-sm" type="button">Small Button</button>
 
 <button class="btn btn-default btn-lg" type="button">Large Button</button>
+
+<div class="btn-group">
+  <button class="btn btn-default" type="button">Button One</button>
+  <button class="btn btn-default" type="button">Button Two</button>
+  <button class="btn btn-default" type="button">Button Three</button>
+</div>
 ```
 
 ## The CSS
@@ -165,6 +171,43 @@ npm i designkit-buttons --save
 .btn-danger:disabled, .btn-danger:disabled:hover, .btn-danger.disabled, .btn-danger.disabled:hover {
   background-color: #d82f2f;
   border-color: rgba(20, 20, 20, 0.2);
+}
+
+.btn-group {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-group::before, .btn-group::after {
+  display: table;
+  content: "";
+}
+
+.btn-group .btn {
+  position: relative;
+  float: left;
+}
+
+.btn-group .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.btn-group .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group .btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group .btn:hover, .btn-group .btn:active {
+  z-index: 2;
+}
+
+.btn-group .btn + .btn {
+  margin-left: -1px;
 }
 ```
 
