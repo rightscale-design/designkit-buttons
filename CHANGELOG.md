@@ -1,3 +1,7 @@
+# v1.0.5
+
+* Minor update to docs
+
 # v1.0.4
 
 * Added button-groups
