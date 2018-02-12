@@ -1,30 +1,14 @@
-# Designkit Buttons
+# designkit-buttons
+1.1.0
+
+A Sass module for buttons used in RightScale apps.
 
 ## Install
-
-```bash
-npm i designkit-buttons --save
+```
+npm i --save designkit-buttons
 ```
 
-## Usage
-
-```html
-<button class="btn btn-default" type="button">Button</button>
-
-<a href="#" class="btn btn-default">Default Link</a>
-
-<button class="btn btn-default btn-sm" type="button">Small Button</button>
-
-<button class="btn btn-default btn-lg" type="button">Large Button</button>
-
-<div class="btn-group">
-  <button class="btn btn-default" type="button">Button One</button>
-  <button class="btn btn-default" type="button">Button Two</button>
-  <button class="btn btn-default" type="button">Button Three</button>
-</div>
-```
-
-## The CSS
+## CSS
 
 ```css
 .btn {
@@ -49,11 +33,10 @@ npm i designkit-buttons --save
   background-position: -1px -1px;
   background-size: 110% 110%;
   background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
   border: 1px solid rgba(27, 31, 35, 0.2);
   border-radius: 2px;
-  background-color: #fcfcfc;
-  background-image: linear-gradient(#fcfcfc, #eee);
-  transition: opacity 0.2s ease-out;
+  transition: opacity .2s ease-out;
 }
 
 .btn:focus {
@@ -106,7 +89,6 @@ npm i designkit-buttons --save
 .btn-default {
   color: #57626c;
   background-color: #e2e4e6;
-  background-color: #fff;
   background-image: linear-gradient(#fff, #e2e4e6);
 }
 
@@ -122,13 +104,11 @@ npm i designkit-buttons --save
 .btn-primary {
   color: #fff;
   background-color: #0871d4;
-  background-color: #0f86f6;
   background-image: linear-gradient(#0f86f6, #0871d4);
 }
 
 .btn-primary:hover, .btn-primary:active {
   background-color: #0871d4;
-  background-color: #0f86f6;
   background-image: linear-gradient(#0f86f6, #0871d4);
 }
 
@@ -140,13 +120,11 @@ npm i designkit-buttons --save
 .btn-success {
   color: #fff;
   background-color: #5fb000;
-  background-color: #70cf00;
   background-image: linear-gradient(#70cf00, #59a500);
 }
 
 .btn-success:hover, .btn-success:active {
   background-color: #5fb000;
-  background-color: #6dca00;
   background-image: linear-gradient(#6dca00, #4c8c00);
 }
 
@@ -158,13 +136,11 @@ npm i designkit-buttons --save
 .btn-danger {
   color: #fff;
   background-color: #d82f2f;
-  background-color: #d82f2f;
   background-image: linear-gradient(#d82f2f, #b72323);
 }
 
 .btn-danger:hover, .btn-danger:active {
   background-color: #d82f2f;
-  background-color: #d41414;
   background-image: linear-gradient(#d41414, #a60f0f);
 }
 
@@ -209,6 +185,7 @@ npm i designkit-buttons --save
 .btn-group .btn + .btn {
   margin-left: -1px;
 }
+
 ```
 
 ## Author
