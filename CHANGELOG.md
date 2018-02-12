@@ -1,3 +1,9 @@
+# v1.1.0
+
+* Removed bourbon
+* Updated build setup
+* Added new readme script
+
 # v1.0.5
 
 * Minor update to docs
