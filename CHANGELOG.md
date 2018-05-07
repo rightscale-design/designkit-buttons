@@ -1,3 +1,8 @@
+# v1.1.1
+
+* Added button-toolbar
+* Updated build scripts
+
 # v1.1.0
 
 * Removed bourbon
