@@ -1,5 +1,5 @@
 # designkit-buttons
-1.1.0
+1.1.1
 
 A Sass module for buttons used in RightScale apps.
 
@@ -33,9 +33,11 @@ npm i --save designkit-buttons
   background-position: -1px -1px;
   background-size: 110% 110%;
   background-color: #eee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#eee));
   background-image: linear-gradient(#fcfcfc, #eee);
   border: 1px solid rgba(27, 31, 35, 0.2);
   border-radius: 2px;
+  -webkit-transition: opacity .2s ease-out;
   transition: opacity .2s ease-out;
 }
 
@@ -52,13 +54,15 @@ npm i --save designkit-buttons
   cursor: not-allowed;
   background-image: none;
   border-color: rgba(20, 20, 20, 0.2);
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   opacity: .65;
 }
 
 .btn {
   border-color: rgba(30, 30, 30, 0.2) rgba(30, 30, 30, 0.2) rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .btn:focus {
@@ -67,11 +71,13 @@ npm i --save designkit-buttons
 
 .btn:hover, .btn:active {
   border-color: rgba(30, 30, 30, 0.35) rgba(30, 30, 30, 0.35) rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -20px 65px -40px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -20px 65px -40px rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -20px 65px -40px rgba(0, 0, 0, 0.9);
 }
 
 .btn:active {
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -20px 65px -40px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -20px 65px -40px rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -20px 65px -40px rgba(0, 0, 0, 0.9);
 }
 
 .btn.btn-sm {
@@ -89,6 +95,7 @@ npm i --save designkit-buttons
 .btn-default {
   color: #57626c;
   background-color: #e2e4e6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2e4e6));
   background-image: linear-gradient(#fff, #e2e4e6);
 }
 
@@ -104,11 +111,13 @@ npm i --save designkit-buttons
 .btn-primary {
   color: #fff;
   background-color: #0871d4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0f86f6), to(#0871d4));
   background-image: linear-gradient(#0f86f6, #0871d4);
 }
 
 .btn-primary:hover, .btn-primary:active {
   background-color: #0871d4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0f86f6), to(#0871d4));
   background-image: linear-gradient(#0f86f6, #0871d4);
 }
 
@@ -120,11 +129,13 @@ npm i --save designkit-buttons
 .btn-success {
   color: #fff;
   background-color: #5fb000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#70cf00), to(#59a500));
   background-image: linear-gradient(#70cf00, #59a500);
 }
 
 .btn-success:hover, .btn-success:active {
   background-color: #5fb000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6dca00), to(#4c8c00));
   background-image: linear-gradient(#6dca00, #4c8c00);
 }
 
@@ -136,11 +147,13 @@ npm i --save designkit-buttons
 .btn-danger {
   color: #fff;
   background-color: #d82f2f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d82f2f), to(#b72323));
   background-image: linear-gradient(#d82f2f, #b72323);
 }
 
 .btn-danger:hover, .btn-danger:active {
   background-color: #d82f2f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d41414), to(#a60f0f));
   background-image: linear-gradient(#d41414, #a60f0f);
 }
 
@@ -184,6 +197,17 @@ npm i --save designkit-buttons
 
 .btn-group .btn + .btn {
   margin-left: -1px;
+}
+
+.btn-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 ```

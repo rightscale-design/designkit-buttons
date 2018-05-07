@@ -1,15 +1,10 @@
-var csso = require('csso');
 var fs = require('fs');
-var inputFile = "./dist/designkit-buttons.css";
-var input = fs.readFileSync(inputFile, 'utf8');
-var output = csso.minify(input);
-var outputFile = "./docs/doc.min.css";
+var module = require('../package.json');
 
-// Output css for docs
-fs.writeFile(outputFile, output.css, function(err) {
-  if (err) {
-    return console.log(err);
-  }
+// read compiled stylesheet
+var readStyle = fs.createReadStream('./dist/'+module.name+'.css');
 
-  console.log("Success!");
-});
+// write stylesheet to docs folder
+var writeStyle = fs.createWriteStream('./docs/docs.css');
+
+readStyle.pipe(writeStyle);
